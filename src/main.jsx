@@ -27,6 +27,7 @@ import "bootstrap/dist/js/bootstrap.bundle.min";
 import { createBrowserRouter,RouterProvider } from 'react-router-dom';
 import ProductProfile from './components/Products-container/productprofile.jsx';
 import ProductsContainer from './components/Products-container/index.jsx';
+import Image from './components/image.jsx';
 const router=createBrowserRouter([
   {
     path:'/',
@@ -40,6 +41,10 @@ const router=createBrowserRouter([
         path:'/productprofile',
         element:<ProductProfile/>,
         },
+        {
+          path:"/image",
+          element:<Image/>,
+        }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
